@@ -5,6 +5,7 @@ html {
 }
 
 body {
+  width: 100%;
   font-size: 16px;
   font-family: "Roboto", serif;
   margin: 0;
@@ -14,10 +15,19 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 header .container {
   background-color: rgb(64, 64, 85);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
   .logo {
     color: #fff;
     font-weight: bold;
@@ -25,25 +35,95 @@ header .container {
     display: flex;
     flex-direction: row;
     padding: 5px;
+
     p {
       padding-left: 5px;
+      align-self: center;
     }
   }
+
   ul {
+    padding-left: 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
+    list-style: none;
+    font-size: 18px;
+
+    li {
+      padding: 19px 20px;
+    }
+  }
+
+  .enter {
+    width: 180px;
+    text-align: center;
+    font-size: 18px;
+    padding: 19px 0;
   }
 }
 
-main .container{
+main .container {
   background-color: #fff;
   background-image: url("../img/main_page_bcg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .main-text {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #fff;
+    padding: 30px;
+    min-width: 700px;
+
+    h1 {
+      font-size: 30px;
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        padding-left: 15px;
+        position: relative;
+
+        &:before {
+          content: "";
+          width: 10px;
+          background-color: rgb(64, 64, 85);
+          height: 1px;
+          position: absolute;
+          left: 0;
+          top: 10px;
+        }
+      }
+    }
+    .note {
+      margin-top: 10px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
 }
 
-footer .container a {
-color: rgb(64, 64, 85);
+footer .container {
+ul {
+  display: flex;
+  justify-content: center;
+  li {
+    padding: 0 20px;
+  a {
+  color: rgb(64, 64, 85);
+}
+}
+}
 }
 
 .button {
@@ -51,7 +131,6 @@ color: rgb(64, 64, 85);
   background-color: rgb(64, 64, 85);
   max-width: 150px;
   margin: 0 auto;
-
 }
 
 p {
@@ -59,7 +138,7 @@ p {
 }
 
 a {
-color: #fff;
+  color: #fff;
 }
 
 h1 {
