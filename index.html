@@ -12,7 +12,6 @@
 
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="resources/js/materialize.min.js"></script>
-
 </head>
 
 <body>
@@ -22,20 +21,22 @@
         <img src="resources\img\logotype.png" alt="Логотип" width="48" height="48">
         <p>Редактор<br>документов</p>
       </div>
+
       <ul>
-        <li><a href="">Возможности</a></li>
-        <li><a href="">Блог</a></li>
-        <li><a href="">Отзывы</a></li>
+        <li class="waves-effect waves-light"><a href="">Возможности</a></li>
+        <li class="waves-effect waves-light"><a href="">Блог</a></li>
+        <li class="waves-effect waves-light"><a href="">Отзывы</a></li>
       </ul>
-      <div class="enter">
-        <a href="">Войти</a>
+
+      <div class="waves-effect waves-light btn enter">
+        <a href="#login-window">Войти</a>
       </div>
     </div>
   </header>
   <main>
     <div class="container">
       <div class="main-text">
-      <h1>Редактор документов</h1>
+        <h1>Редактор документов</h1>
 
         <p>
           Позволяет выполнять автоматическое оформление содержания любых документов: контрольных, курсовых и дипломных работ, рефератов, магистерских диссертаций, диссертационных исследований на получение степени кандидат и доктор наук, монографий, учебных пособий,
@@ -60,7 +61,7 @@
         <p class="note"> <sup>*</sup> Стартовая версия ресурса позволяет бесплатно оформить содержание любых документов.
         </p>
 
-      <div class="button"><a href="">Начать работу</a></div>
+        <div class="waves-effect waves-light btn"><a href="#login-window">Начать работу</a></div>
       </div>
     </div>
   </main>
@@ -73,6 +74,39 @@
       </ul>
     </div>
   </footer>
+
+  <div id="login-window" class="modal">
+    <div class="modal-content">
+      <p class="modal-title">Вход</p>
+      <form action="">
+        <div class="input-field">
+          <input id="login" name="login" type="text" class="validate" required>
+          <label for="login">Имя</label>
+        </div>
+        <div class="input-field">
+          <input id="password" name="password" type="password" class="validate" required>
+          <label for="password">Пароль</label>
+        </div>
+        <p>
+          <input type="checkbox" class="filled-in" id="filled-in-box"  />
+          <label for="filled-in-box">Запомнить меня</label>
+        </p>
+        <div class="modal-footer">
+          <div class="registration">
+          <a href="#!" class="modal-action">Зарегистрироваться</a>
+          <a href="#!" class="modal-action">Забыли пароль?</a>
+          </div>
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn">Войти</a>
+          
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="resources\js\modal-windows.js">
+
+  </script>
 </body>
 
 </html>
