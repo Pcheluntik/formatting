@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Личный кабинет</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+  <link rel="stylesheet" href="resources\css\style.css">
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="resources/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="resources\img\logotype.png" alt="Логотип" width="48" height="48">
+        <p>Редактор<br>документов</p>
+      </div>
+
+      <ul>
+        <li class="waves-effect"><a href="">Возможности</a></li>
+        <li class="waves-effect"><a href="">Блог</a></li>
+        <li class="waves-effect"><a href="">Отзывы</a></li>
+      </ul>
+
+      <div class="waves-effect waves-light btn enter">
+        <!--  <a href="#login-window">Войти</a>-->
+        <a href="">Имя Пользователя</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container user-page">
+      <div class="nav_menu">
+        <div class="collection">
+          <a href="#!" class="collection-item active">Загрузка документа</a>
+          <a href="#!" class="collection-item ">Формирование требований</a>
+          <a href="#!" class="collection-item">Список требований</a>
+          <a href="#!" class="collection-item">Список документов</a>
+          <a href="#!" class="collection-item">Личная информация</a>
+          <a href="#!" class="collection-item">Информация о компании</a>
+          <a href="#!" class="collection-item">Состояние счета</a>
+        </div>
+
+      </div>
+      <div class="load_doc">
+        <h1>Загрузка документов</h1>
+        <form action="">
+
+          <div class="input-field">
+            <select>
+              <option value="" disabled selected>Выберите требования</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+          <div class="file-dir">
+            <div class="file-field input-field">
+              <div class="btn">
+                <span>Добавить документ</span>
+                <input type="file" multiple>
+              </div>
+              <div class="input-field">
+                <div class="btn">
+                  <span>Удалить документ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="doc_list">
+            <input type="checkbox" class="filled-in" id="filled-in-box-1" />
+            <label for="filled-in-box-1">Название документа 1</label>
+            <input type="checkbox" class="filled-in" id="filled-in-box-2" />
+            <label for="filled-in-box-2">Название документа 2</label>
+          </div>
+
+          <div class="input-field doc-processing">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Начать обработку</button>
+          </div>
+
+        </form>
+
+
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <ul>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">О нас</a></li>
+        <li><a href="">Поддержка</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
