@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Личный кабинет</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+  <link rel="stylesheet" href="resources\css\style.css">
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="resources/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="resources\img\logotype.png" alt="Логотип" width="48" height="48">
+        <p>Редактор<br>документов</p>
+      </div>
+
+      <ul>
+        <li class="waves-effect"><a href="">Возможности</a></li>
+        <li class="waves-effect"><a href="">Блог</a></li>
+        <li class="waves-effect"><a href="">Отзывы</a></li>
+      </ul>
+
+      <div class="waves-effect waves-light btn enter">
+        <!--  <a href="#login-window">Войти</a>-->
+        <a href="">Имя Пользователя</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container user-page">
+      <div class="nav_menu">
+        <div class="collection">
+          <a href="user_cabinet.html" class="collection-item">Загрузка документа</a>
+          <a href="#!" class="collection-item ">Формирование требований</a>
+          <a href="#!" class="collection-item  active">Список требований</a>
+          <a href="#!" class="collection-item">Список документов</a>
+          <a href="#!" class="collection-item">Личная информация</a>
+          <a href="#!" class="collection-item">Информация о компании</a>
+          <a href="#!" class="collection-item">Состояние счета</a>
+        </div>
+
+      </div>
+      <div class="content">
+        <div class="requirements_list">
+          <h1>Список требований</h1>
+          <div class="search-form">
+            <input type="text" name="searc-requirements" value="">
+          </div>
+          <table class="striped highlight">
+            <tr>
+              <th>
+                <input type="checkbox" class="filled-in" id="req-0" />
+                <label for="req-0"></label>
+              </th>
+              <th>
+                Название
+              </th>
+              <th>
+                Дата создания
+              </th>
+              <th>
+                Тип
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="filled-in" id="req-1" />
+                <label for="req-1"></label>
+              </td>
+              <td> Требование 1</td>
+              <td>24.01.2015</td>
+              <td>Стандартное</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="filled-in" id="req-2" />
+                <label for="req-2"></label>
+              </td>
+              <td> Требование 2</td>
+              <td>24.01.2015</td>
+              <td>Стандартное</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="filled-in" id="req-3" />
+                <label for="req-3"></label>
+              </td>
+              <td> Требование 3</td>
+              <td>24.01.2015</td>
+              <td>Стандартное</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="filled-in" id="req-4" />
+                <label for="req-4"></label>
+              </td>
+              <td> Требование 4</td>
+              <td>24.01.2015</td>
+              <td>Стандартное</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="filled-in" id="req-5" />
+                <label for="req-5"></label>
+              </td>
+              <td> Требование 5</td>
+              <td>24.01.2015</td>
+              <td>Стандартное</td>
+            </tr>
+
+          </table>
+
+
+          <div class="req-delete">
+            <button class="btn waves-effect waves-light">Удалить</button>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <ul>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">О нас</a></li>
+        <li><a href="">Поддержка</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

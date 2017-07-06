@@ -15,7 +15,7 @@
   <script src="resources/js/materialize.min.js"></script>
 
 </head>
-
+<!-- Страница загрузки документа пользователем-->
 <body>
   <header>
     <div class="container">
@@ -42,7 +42,7 @@
         <div class="collection">
           <a href="#!" class="collection-item active">Загрузка документа</a>
           <a href="#!" class="collection-item ">Формирование требований</a>
-          <a href="#!" class="collection-item">Список требований</a>
+          <a href="requirements_list.html" class="collection-item">Список требований</a>
           <a href="#!" class="collection-item">Список документов</a>
           <a href="#!" class="collection-item">Личная информация</a>
           <a href="#!" class="collection-item">Информация о компании</a>
@@ -50,45 +50,47 @@
         </div>
 
       </div>
-      <div class="load_doc">
-        <h1>Загрузка документов</h1>
-        <form action="">
+      <div class="content">
+        <div class="load_doc">
+          <h1>Загрузка документов</h1>
+          <form action="">
 
-          <div class="input-field">
-            <select>
+            <div class="input-field">
+              <select>
               <option value="" disabled selected>Выберите требования</option>
               <option value="1">Option 1</option>
               <option value="2">Option 2</option>
               <option value="3">Option 3</option>
             </select>
-          </div>
-          <div class="file-dir">
-            <div class="file-field input-field">
-              <div class="btn">
-                <span>Добавить документ</span>
-                <input type="file" multiple>
-              </div>
-              <div class="input-field">
-                <div class="btn">
-                  <span>Удалить документ</span>
+            </div>
+            <div class="file-dir">
+              <div class="file-field input-field">
+                <div class="btn green">
+                  <span>Добавить документ</span>
+                  <input type="file" multiple>
+                </div>
+                <div class="input-field">
+                  <div class="btn materialize-red">
+                    <span>Удалить документ</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="doc_list">
-            <input type="checkbox" class="filled-in" id="filled-in-box-1" />
-            <label for="filled-in-box-1">Название документа 1</label>
-            <input type="checkbox" class="filled-in" id="filled-in-box-2" />
-            <label for="filled-in-box-2">Название документа 2</label>
-          </div>
+            <div class="doc_list">
+              <input type="checkbox" class="filled-in" id="filled-in-box-1" />
+              <label for="filled-in-box-1">Название документа 1</label>
+              <input type="checkbox" class="filled-in" id="filled-in-box-2" />
+              <label for="filled-in-box-2">Название документа 2</label>
+            </div>
 
-          <div class="input-field doc-processing">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Начать обработку</button>
-          </div>
+            <div class="input-field doc-processing">
+              <button class="btn waves-effect waves-light" type="submit" name="action">Начать обработку</button>
+            </div>
 
-        </form>
+          </form>
 
 
+        </div>
       </div>
     </div>
   </main>

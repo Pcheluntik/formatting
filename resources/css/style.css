@@ -7269,7 +7269,8 @@ body {
   -ms-flex-direction: column;
   flex-direction: column; }
 
-header, main {
+header,
+main {
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -7487,6 +7488,31 @@ p {
 a {
   color: #fff; }
 
+.nav_menu {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  max-width: 400px;
+  margin: 0;
+  position: relative;
+  margin-right: 30px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch; }
+  .nav_menu:after {
+    content: "";
+    height: 550px;
+    width: 1px;
+    position: absolute;
+    background-color: #e0e0e0;
+    right: 0;
+    top: -22px; }
+  .nav_menu .collection {
+    margin: 0; }
+    .nav_menu .collection li a {
+      color: #404055; }
+
 main .user-page {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7502,45 +7528,12 @@ main .user-page {
     font-size: 30px;
     text-align: center;
     margin: 20px 0; }
-  main .user-page .nav_menu {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 auto;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
-    max-width: 400px;
-    margin: 0;
-    position: relative;
-    margin-right: 30px;
-    -webkit-align-self: stretch;
-    -ms-flex-item-align: stretch;
-    align-self: stretch; }
-    main .user-page .nav_menu:after {
-      content: "";
-      height: 550px;
-      width: 1px;
-      position: absolute;
-      background-color: #e0e0e0;
-      right: 0;
-      top: -22px; }
-    main .user-page .nav_menu .collection {
-      margin: 0; }
-      main .user-page .nav_menu .collection li a {
-        color: #404055; }
-  main .user-page .load_doc {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+  main .user-page .content {
     -webkit-box-flex: 2;
     -webkit-flex: 2 0 auto;
     -ms-flex: 2 0 auto;
     flex: 2 0 auto; }
-    main .user-page .load_doc form {
+    main .user-page .content .load_doc {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -7550,10 +7543,7 @@ main .user-page {
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column; }
-      main .user-page .load_doc form select {
-        border: 1px solid #404055;
-        max-width: 410px; }
-      main .user-page .load_doc form .doc_list {
+      main .user-page .content .load_doc form {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -7562,15 +7552,58 @@ main .user-page {
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
-        flex-direction: column;
-        margin-top: 40px; }
-      main .user-page .load_doc form .doc-processing {
-        margin-top: 40px; }
-      main .user-page .load_doc form input[type="file"] {
-        width: 200px; }
-      main .user-page .load_doc form .input-field .btn, main .user-page .load_doc form .input-field .btn-large {
-        padding: 10px 20px;
-        min-width: 200px;
-        margin-right: 10px; }
-      main .user-page .load_doc form .file-field .btn, main .user-page .load_doc form .file-field .btn-large {
-        padding-top: 0; }
+        flex-direction: column; }
+        main .user-page .content .load_doc form select {
+          border: 1px solid #404055;
+          max-width: 410px; }
+        main .user-page .content .load_doc form .doc_list {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          margin-top: 40px; }
+        main .user-page .content .load_doc form .doc-processing {
+          margin-top: 40px; }
+        main .user-page .content .load_doc form input[type="file"] {
+          width: 200px; }
+        main .user-page .content .load_doc form .input-field .btn, main .user-page .content .load_doc form .input-field .btn-large {
+          padding: 10px 20px;
+          min-width: 200px;
+          margin-right: 10px; }
+        main .user-page .content .load_doc form .file-field .btn, main .user-page .content .load_doc form .file-field .btn-large {
+          padding-top: 0; }
+  main .user-page .btn, main .user-page .btn-large {
+    padding: 10px 20px;
+    min-width: 200px; }
+  main .user-page table {
+    max-width: 90%;
+    margin-bottom: 20px; }
+    main .user-page table tr td,
+    main .user-page table tr th {
+      text-align: center;
+      min-width: 30px;
+      border: 1px solid lightgrey; }
+  main .user-page .requirements_list .search-form {
+    float: right;
+    margin-right: 10%; }
+    main .user-page .requirements_list .search-form input {
+      height: 30px; }
+
+.search-form {
+  width: 250px;
+  position: relative; }
+  .search-form:before {
+    content: "";
+    background-image: url("../img/search.png");
+    width: 30px;
+    height: 30px;
+    right: 0;
+    top: 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute; }
