@@ -7269,13 +7269,13 @@ body {
   -ms-flex-direction: column;
   flex-direction: column; }
 
-header,
 main {
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto; }
 
+header,
 footer {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
@@ -7507,7 +7507,7 @@ a {
     position: absolute;
     background-color: #e0e0e0;
     right: 0;
-    top: -22px; }
+    top: 0; }
   .nav_menu .collection {
     margin: 0; }
     .nav_menu .collection li a {
@@ -7593,6 +7593,28 @@ main .user-page {
     margin-right: 10%; }
     main .user-page .requirements_list .search-form input {
       height: 30px; }
+  main .user-page .btns_row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    main .user-page .btns_row.doc_search {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      main .user-page .btns_row.doc_search .btn, main .user-page .btns_row.doc_search .btn-large {
+        font-size: 15px;
+        min-width: 20px;
+        height: 40px;
+        margin-right: 10px; }
+    main .user-page .btns_row:not(.doc_search) div {
+      margin-right: 20px; }
 
 .search-form {
   width: 250px;

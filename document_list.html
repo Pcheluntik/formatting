@@ -42,8 +42,8 @@
         <div class="collection">
           <a href="user_cabinet.html" class="collection-item">Загрузка документа</a>
           <a href="#!" class="collection-item ">Формирование требований</a>
-          <a href="#!" class="collection-item  active">Список требований</a>
-          <a href="document_list.html" class="collection-item">Список документов</a>
+          <a href="#!" class="collection-item">Список требований</a>
+          <a href="requirements_list.html" class="collection-item active">Список документов</a>
           <a href="#!" class="collection-item">Личная информация</a>
           <a href="#!" class="collection-item">Информация о компании</a>
           <a href="#!" class="collection-item">Состояние счета</a>
@@ -52,9 +52,27 @@
       </div>
       <div class="content">
         <div class="requirements_list">
-          <h1>Список требований</h1>
-          <div class="search-form">
-            <input type="text" name="search-requirements" value="">
+          <h1>Список документов</h1>
+          <div class="btns_row doc_search">
+            <div class="doc-list_process">
+              <button class="btn waves-effect waves-light blue">Все</button>
+            </div>
+
+            <div class="doc-list_delete">
+              <button class="btn waves-effect waves-light blue">Новые</button>
+            </div>
+            <div class="doc-list_details">
+              <button class="btn waves-effect waves-light blue">Ждут оплаты</button>
+            </div>
+            <div class="doc-list_details">
+              <button class="btn waves-effect waves-light blue">В обработке</button>
+            </div>
+            <div class="doc-list_details">
+              <button class="btn waves-effect waves-light blue">Готовые</button>
+            </div>
+            <div class="search-form">
+              <input type="text" name="search-requirements" value="" placeholder="Введите название...">
+            </div>
           </div>
           <table class="striped highlight">
             <tr>
@@ -66,66 +84,51 @@
                 Название
               </th>
               <th>
-                Дата создания
+                Размер
               </th>
               <th>
-                Тип
+                Дата загрузки
+              </th>
+              <th>
+                Состояние
+              </th>
+              <th>
+                Требование
+              </th>
+              <th>
+                .docx
+              </th>
+              <th>
+                .pdf
               </th>
             </tr>
             <tr>
               <td>
-                <input type="checkbox" class="filled-in" id="req-1" />
-                <label for="req-1"></label>
+                <input type="checkbox" class="filled-in" id="doc-1" />
+                <label for="doc-1"></label>
               </td>
-              <td> Требование 1</td>
+              <td>Документ1</td>
+              <td>2.5 мб</td>
               <td>24.01.2015</td>
-              <td>Стандартное</td>
-            </tr>
-            <tr>
-              <td>
-                <input type="checkbox" class="filled-in" id="req-2" />
-                <label for="req-2"></label>
-              </td>
-              <td> Требование 2</td>
-              <td>24.01.2015</td>
-              <td>Стандартное</td>
-            </tr>
-            <tr>
-              <td>
-                <input type="checkbox" class="filled-in" id="req-3" />
-                <label for="req-3"></label>
-              </td>
-              <td> Требование 3</td>
-              <td>24.01.2015</td>
-              <td>Стандартное</td>
-            </tr>
-            <tr>
-              <td>
-                <input type="checkbox" class="filled-in" id="req-4" />
-                <label for="req-4"></label>
-              </td>
-              <td> Требование 4</td>
-              <td>24.01.2015</td>
-              <td>Стандартное</td>
-            </tr>
-            <tr>
-              <td>
-                <input type="checkbox" class="filled-in" id="req-5" />
-                <label for="req-5"></label>
-              </td>
-              <td> Требование 5</td>
-              <td>24.01.2015</td>
-              <td>Стандартное</td>
+              <td>Новый</td>
+              <td>Требование2</td>
+              <td><img src="resources\img\Filetype-Word-doc.ico" alt=".word" width="30" height="30"></td>
+              <td><img src="resources\img\Filetype-Pdf.ico" alt=".pdf" width="30" height="30"></td>
             </tr>
 
           </table>
+          <div class="btns_row">
+            <div class="doc-list_process">
+              <button class="btn waves-effect waves-light green">Обработать</button>
+            </div>
 
-
-          <div class="req-delete">
-            <button class="btn waves-effect waves-light">Удалить</button>
+            <div class="doc-list_delete">
+              <button class="btn waves-effect waves-light red">Удалить</button>
+            </div>
+            <div class="doc-list_details">
+              <button class="btn waves-effect waves-light">Детальная информация</button>
+            </div>
           </div>
-
-
         </div>
       </div>
     </div>

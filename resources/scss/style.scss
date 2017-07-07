@@ -15,11 +15,11 @@ body {
   flex-direction: column;
 }
 
-header,
 main {
   flex: 1 0 auto;
 }
 
+header,
 footer {
   flex: 0 0 auto;
 }
@@ -251,7 +251,7 @@ a {
     position: absolute;
     background-color: #e0e0e0;
     right: 0;
-    top: -22px;
+    top: 0;
   }
 
   .collection {
@@ -346,6 +346,25 @@ main .user-page {
       height: 30px;
     }
     }
+  }
+  .btns_row {
+    display: flex;
+    flex-direction: row;
+
+    &.doc_search {
+    justify-content: space-between;
+      .btn {
+        font-size: 15px;
+
+        min-width: 20px;
+        height: 40px;
+        margin-right: 10px;
+      }
+    }
+    &:not(.doc_search) div {
+      margin-right: 20px;
+    }
+
   }
 }
 
