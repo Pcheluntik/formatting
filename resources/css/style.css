@@ -4479,24 +4479,24 @@ button:focus {
 
 label {
   font-size: 0.8rem;
-  color: #9e9e9e; }
+  color: #546e7a; }
 
 /* Text Inputs + Textarea
    ========================================================================== */
 /* Style Placeholders */
 ::-webkit-input-placeholder {
-  color: #d1d1d1; }
+  color: #87a1ad; }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #d1d1d1; }
+  color: #87a1ad; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #d1d1d1; }
+  color: #87a1ad; }
 
 :-ms-input-placeholder {
-  color: #d1d1d1; }
+  color: #87a1ad; }
 
 /* Text inputs */
 input:not([type]),
@@ -4514,7 +4514,7 @@ input[type=search]:not(.browser-default),
 textarea.materialize-textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #9e9e9e;
+  border-bottom: 1px solid #546e7a;
   border-radius: 0;
   outline: none;
   height: 3rem;
@@ -4781,7 +4781,7 @@ textarea.materialize-textarea {
   .input-field.col .prefix ~ .validate ~ label {
     width: calc(100% - 3rem - 1.5rem); }
   .input-field label {
-    color: #9e9e9e;
+    color: #546e7a;
     position: absolute;
     top: 0.8rem;
     left: 0;
@@ -5303,7 +5303,7 @@ select {
     cursor: pointer;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #9e9e9e;
+    border-bottom: 1px solid #546e7a;
     outline: none;
     height: 3rem;
     line-height: 3rem;
@@ -7337,6 +7337,17 @@ header .container {
       -ms-flex-item-align: center;
       align-self: center;
       cursor: default; }
+    header .container .logo a {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      width: 300px; }
   header .container ul {
     padding-left: 0;
     margin: 0;
@@ -7629,3 +7640,37 @@ main .user-page {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute; }
+
+.company_info_form {
+  margin-left: 30px; }
+  .company_info_form form {
+    width: 90%;
+    margin-bottom: 20px; }
+    .company_info_form form .addresses {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .company_info_form form .addresses fieldset {
+        width: 48%;
+        padding-left: 20px;
+        padding-right: 20px; }
+    .company_info_form form fieldset {
+      margin-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 30px; }
+    .company_info_form form legend {
+      font-size: 20px;
+      color: #404055; }
+    .company_info_form form .btn, .company_info_form form .btn-large {
+      margin-top: 20px;
+      padding: 0; }

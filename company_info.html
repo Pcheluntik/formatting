@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Личный кабинет</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+  <link rel="stylesheet" href="resources\css\style.css">
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="resources/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+        <img src="resources\img\logotype.png" alt="Логотип" width="48" height="48">
+        <p>Редактор<br>документов</p>
+        </a>
+      </div>
+
+      <ul>
+        <li class="waves-effect"><a href="">Возможности</a></li>
+        <li class="waves-effect"><a href="">Блог</a></li>
+        <li class="waves-effect"><a href="">Отзывы</a></li>
+      </ul>
+
+      <div class="waves-effect waves-light btn enter">
+        <!--  <a href="#login-window">Войти</a>-->
+        <a href="">Имя Пользователя</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container user-page">
+      <div class="nav_menu">
+        <div class="collection">
+          <a href="user_cabinet.html" class="collection-item">Загрузка документа</a>
+          <a href="#!" class="collection-item ">Формирование требований</a>
+          <a href="requirements_list.html" class="collection-item">Список требований</a>
+          <a href="document_list.html" class="collection-item">Список документов</a>
+          <a href="#!" class="collection-item">Личная информация</a>
+          <a href="#!" class="collection-item  active">Информация о компании</a>
+          <a href="#!" class="collection-item">Состояние счета</a>
+        </div>
+
+      </div>
+      <div class="content">
+        <div class="company_info_form">
+          <h1>Информация о компании</h1>
+
+          <form action="">
+            <div class="input-field">
+              <input id="company_full_name" placeholder="Введите полное название организации..." name="company_full_name" type="text" class="validate" required>
+              <label for="company_full_name">Полное название</label>
+            </div>
+            <div class="input-field">
+              <input id="company_small_name"  placeholder="Введите сокращенное название организации..." name="company_small_name" type="text" class="validate" required>
+              <label for="company_small_name">Сокращенное название</label>
+            </div>
+
+            <div class="addresses">
+            <fieldset>
+              <legend>Юридический адрес</legend>
+              <div class="input-field">
+                <input id="official_address" name="official_address" placeholder="Введите страну..." type="text" class="validate" required>
+                <label for="official_address">Страна</label>
+              </div>
+              <div class="input-field">
+                <input id="official_city" name="official_city" placeholder="Введите город..." type="text" class="validate" required>
+                <label for="official_city">Город</label>
+              </div>
+              <div class="input-field">
+                <input id="official_index" name="official_index" placeholder="Введите индекс..." type="text" class="validate" required>
+                <label for="official_index">Почтовый индекс</label>
+              </div>
+              <div class="input-field">
+                <input id="official_address" name="official_address"placeholder="Введите адрес..."  type="text" class="validate" required>
+                <label for="official_address">Адрес</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Почтовый адрес</legend>
+              <div class="input-field">
+                <input id="address" name="address" placeholder="Введите страну..." type="text" class="validate" required>
+                <label for="address">Страна</label>
+              </div>
+              <div class="input-field">
+                <input id="city" name="city" placeholder="Введите город..." type="text" class="validate" required>
+                <label for="city">Город</label>
+              </div>
+              <div class="input-field">
+                <input id="index" name="index" placeholder="Введите индекс..." type="text" class="validate" required>
+                <label for="index">Почтовый индекс</label>
+              </div>
+              <div class="input-field">
+                <input id="address" name="address"placeholder="Введите адрес..."  type="text" class="validate" required>
+                <label for="address">Адрес</label>
+              </div>
+            </fieldset>
+            </div>
+
+            <fieldset>
+              <legend> Руководство(кто подписывает договор) </legend>
+              <div class="input-field">
+                <input id="office_post" name="office_post" type="text" class="validate" placeholder="Введите должность..." required>
+                <label for="office_post">Должность</label>
+              </div>
+              <div class="input-field">
+                <input id="office_reason" name="office_reason" type="text" placeholder="Введите основание, на котором действует..." class="validate" required>
+                <label for="office_reason">На основании чего действует</label>
+              </div>
+              <div class="input-field">
+                <input id="office_FIO" name="office_FIO" type="text" placeholder="Введите ФИО..." class="validate" required>
+                <label for="office_FIO">ФИО (полностью)</label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Контактная информация</legend>
+            <div class="input-field">
+              <input id="phone-fax" name="phone-fax" type="text" class="validate" placeholder="Введите телефон/факс..." required>
+              <label for="phone-fax">Телефон/Факс</label>
+            </div>
+            <div class="input-field">
+              <input id="phone" name="phone" type="text" class="validate" placeholder="Введите телефон..." required>
+              <label for="phone">Телефон</label>
+            </div>
+            <div class="input-field">
+              <input id="email" name="email" type="email" class="validate" placeholder="Введите электронную почту..." required>
+              <label for="email">Электронная почта</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Банковские и другие реквизиты</legend>
+            <div class="input-field">
+              <input id="UNN" name="UNN" type="text" class="validate" placeholder="Введите УНН..." required>
+              <label for="UNN">УНН</label>
+            </div>
+            <div class="input-field">
+              <input id="OKPO" name="OKPO" type="text" class="validate" placeholder="Введите ОКПО..." required>
+              <label for="text">ОКПО</label>
+            </div>
+            <div class="input-field">
+              <input id="checking_account" name="checking_account" type="text" class="validate" placeholder="Введите расчетный счет..." required>
+              <label for="checking_account">Расчетный счет</label>
+            </div>
+            <div class="input-field">
+              <input id="bank" name="bank" type="text" class="validate" placeholder="Введите банк..." required>
+              <label for="bank">Банк</label>
+            </div>
+            <div class="input-field">
+              <input id="bank_code" name="bank_code" type="text" class="validate" placeholder="Введите код банка..." required>
+              <label for="bank_code">Код банка</label>
+            </div>
+            <div class="input-field">
+              <input id="bank_address" name="bank_address" type="text" class="validate" placeholder="Введите адрес банка..." required>
+              <label for="bank_address">Адрес банка</label>
+            </div>
+          </fieldset>
+            <input type="submit" class="waves-effect btn" value="Сохранить">
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <ul>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">О нас</a></li>
+        <li><a href="">Поддержка</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
