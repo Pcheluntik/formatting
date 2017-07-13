@@ -7275,8 +7275,8 @@ main {
   -ms-flex: 1 0 auto;
   flex: 1 0 auto; }
 
-header,
-footer {
+footer,
+header {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -7636,17 +7636,20 @@ main .user-page {
     width: 30px;
     height: 30px;
     right: 0;
-    top: 0%;
+    top: 0;
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute; }
 
-.company_info_form {
+.company_info_form,
+.user_information_form {
   margin-left: 30px; }
-  .company_info_form form {
+  .company_info_form form,
+  .user_information_form form {
     width: 90%;
     margin-bottom: 20px; }
-    .company_info_form form .addresses {
+    .company_info_form form .addresses,
+    .user_information_form form .addresses {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -7660,17 +7663,61 @@ main .user-page {
       -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
       justify-content: space-between; }
-      .company_info_form form .addresses fieldset {
+      .company_info_form form .addresses fieldset,
+      .user_information_form form .addresses fieldset {
         width: 48%;
         padding-left: 20px;
         padding-right: 20px; }
-    .company_info_form form fieldset {
+    .company_info_form form fieldset,
+    .user_information_form form fieldset {
       margin-bottom: 20px;
       padding-left: 30px;
       padding-right: 30px; }
-    .company_info_form form legend {
+    .company_info_form form legend,
+    .user_information_form form legend {
       font-size: 20px;
       color: #404055; }
-    .company_info_form form .btn, .company_info_form form .btn-large {
+    .company_info_form form .btn, .company_info_form form .btn-large,
+    .user_information_form form .btn,
+    .user_information_form form .btn-large {
       margin-top: 20px;
       padding: 0; }
+
+.user_information_form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .user_information_form form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .user_information_form form fieldset {
+      width: 50%;
+      min-width: 400px; }
+    .user_information_form form .btn, .user_information_form form .btn-large {
+      width: 150px;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      margin-top: 0;
+      float: right; }
