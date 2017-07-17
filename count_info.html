@@ -15,7 +15,7 @@
   <script src="resources/js/materialize.min.js"></script>
 
 </head>
-
+<!-- Страница загрузки документа пользователем-->
 <body>
   <header>
     <div class="container">
@@ -44,88 +44,66 @@
         <div class="collection">
           <a href="user_cabinet.html" class="collection-item">Загрузка документа</a>
           <a href="#!" class="collection-item ">Формирование требований</a>
-          <a href="#!" class="collection-item  active">Список требований</a>
+          <a href="requirements_list.html" class="collection-item">Список требований</a>
           <a href="document_list.html" class="collection-item">Список документов</a>
           <a href="user_information.html" class="collection-item">Личная информация</a>
           <a href="company_info.html" class="collection-item">Информация о компании</a>
-          <a href="count_info.html" class="collection-item">Состояние счета</a>
+          <a href="" class="collection-item  active">Состояние счета</a>
         </div>
 
       </div>
       <div class="content">
-        <div class="requirements_list">
-          <h1>Список требований</h1>
-          <div class="search-form">
-            <input type="text" name="search-requirements" value="">
+        <div class="count_information">
+          <h1>Состояние счета</h1>
+          <div class="money">
+          <div class="balance">Баланс: <span>0</span></div>
+
+            <div class="input-field">
+              <select>
+              <option value="BEL" selected>Белорусские рубли</option>
+              <option value="RUB">Русские рубли</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+            </select>
+            </div>
           </div>
+          <div class="tarif">
+            <p class="current_tarif">Текущий тариф</p>
+            <div class="new_tarif btn">Смена тарифа</div>
+            <div class="tarif_name  btn">Наименование тарифа</div>
+          </div>
+          <p class="table_title">Движения по счету</p>
           <table class="striped highlight">
             <tr>
               <th>
-                <input type="checkbox" class="filled-in" id="req-0" />
-                <label for="req-0"></label>
+              Дата
               </th>
               <th>
-                Название
+                Время
               </th>
               <th>
-                Дата создания
+                Действие
               </th>
               <th>
-                Тип
+                Документ
+              </th>
+              <th>
+                Сумма
               </th>
             </tr>
             <tr>
               <td>
-                <input type="checkbox" class="filled-in" id="req-1" />
-                <label for="req-1"></label>
+                -
               </td>
-              <td> Требование 1</td>
-              <td>24.01.2015</td>
-              <td>Стандартное</td>
-            </tr>
-            <tr>
-              <td>
-                <input type="checkbox" class="filled-in" id="req-2" />
-                <label for="req-2"></label>
-              </td>
-              <td> Требование 2</td>
-              <td>24.01.2015</td>
-              <td>Стандартное</td>
-            </tr>
-            <tr>
-              <td>
-                <input type="checkbox" class="filled-in" id="req-3" />
-                <label for="req-3"></label>
-              </td>
-              <td> Требование 3</td>
-              <td>24.01.2015</td>
-              <td>Стандартное</td>
-            </tr>
-            <tr>
-              <td>
-                <input type="checkbox" class="filled-in" id="req-4" />
-                <label for="req-4"></label>
-              </td>
-              <td> Требование 4</td>
-              <td>24.01.2015</td>
-              <td>Стандартное</td>
-            </tr>
-            <tr>
-              <td>
-                <input type="checkbox" class="filled-in" id="req-5" />
-                <label for="req-5"></label>
-              </td>
-              <td> Требование 5</td>
-              <td>24.01.2015</td>
-              <td>Стандартное</td>
-            </tr>
+              <td>-</td>
+              <td>Пополнение счета</td>
+              <td>-</td>
+              <td>+10 000</td>
+                </tr>
 
           </table>
 
 
-          <div class="req-delete">
-            <button class="btn waves-effect waves-light">Удалить</button>
-          </div>
 
 
         </div>

@@ -7721,3 +7721,37 @@ main .user-page {
       align-self: center;
       margin-top: 0;
       float: right; }
+
+.table_title {
+  font-size: 30px;
+  text-align: center;
+  margin: 30px auto 10px; }
+
+.money {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 90%;
+  border-bottom: 2px solid  #9e9e9e; }
+  .money .balance {
+    font-size: 40px;
+    display: inline-block;
+    width: 300px;
+    margin-top: 20px; }
+  .money .input-field {
+    width: 200px; }
+    .money .input-field select {
+      border: 1px solid  #9e9e9e; }
+
+.tarif .current_tarif {
+  font-size: 25px; }
